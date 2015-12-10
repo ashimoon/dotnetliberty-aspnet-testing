@@ -4,9 +4,13 @@ Provides a way of starting and stopping an ASP.NET 5 web application for ease of
 
 Also contains a `WebApplicationTestFixture` that can be used to share a single web application instance amongst multiple test cases with xUnit.
 
-## Why
+## How
 
 With ASP.NET 5, it is easy as pie to fire up a new web application programatically in a matter of seconds.
+
+Ideally, we could use the built in `WebApplication.Run`, but this doesn't give us control over the application lifecycle. This library introduces a new class `WebApplicationTest` that behaves much in the same way, but gives us a `WebApplicationTestHarness` back that can be disposed to shut down the server cleanly.
+
+## Why
 
 This gives us the opportunity to write some cool integration tests, where the test runner is responsible for firing up its own copy of the web application to test against.
 
