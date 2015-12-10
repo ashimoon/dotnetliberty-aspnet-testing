@@ -23,10 +23,6 @@ namespace DotNetLiberty.AspNet.Testing.Samples
     /// </summary>
     public class MinimalApplicationStartup
     {
-        public void ConfigureServices(IServiceCollection services)
-        {
-        }
-
         public void Configure(IApplicationBuilder app)
         {
             app.Run(async (context) =>

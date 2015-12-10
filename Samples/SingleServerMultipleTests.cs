@@ -21,10 +21,6 @@ namespace DotNetLiberty.AspNet.Testing.Samples
     /// </summary>
     public class SingleServerStartup
     {
-        public void ConfigureServices(IServiceCollection services)
-        {
-        }
-
         public void Configure(IApplicationBuilder app)
         {
             int times = 0;
