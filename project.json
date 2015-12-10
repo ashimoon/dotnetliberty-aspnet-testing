@@ -1,10 +1,12 @@
 {
     "version": "1.0.0-*",
-    "description": "DotNetLiberty.AspNet.Testing Class Library",
-    "authors": [ "armen" ],
+    "title": "DotNetLiberty.AspNet.Testing",
+    "description": "Tools for starting/stopping a local instance of an ASP.NET 5 application for use in service/integration tests.",
+    "authors": [ "Armen Shimoon" ],
+    "owners": [ "http://dotnetliberty.com" ],
     "tags": [ "" ],
-    "projectUrl": "",
-    "licenseUrl": "",
+    "projectUrl": "https://github.com/ashimoon/dotnetliberty-aspnet-testing",
+    "licenseUrl": "https://raw.githubusercontent.com/ashimoon/dotnetliberty-aspnet-testing/master/LICENSE.txt",
     "frameworks": {
         "net451": {
             "frameworkAssemblies": {
