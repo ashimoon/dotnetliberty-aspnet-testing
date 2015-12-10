@@ -65,17 +65,27 @@ public void Test()
 }
 ```
 
+# Installation
+
+## NuGet
+
+    PM> Install-Package DotNetLiberty.AspNet.Testing
+
+## project.json
+
+    "DotNetLiberty.AspNet.Testing": "1.0.0"
+
 # More Samples
 
 ## xUnit - New Server Each Test 
-(see /Samples/NewServerEachTest.cs)
+(see https://github.com/ashimoon/dotnetliberty-aspnet-testing/blob/master/Samples/NewServerEachTest.cs)
 
 This will fire up the test web application in the constructor of the xUnit test class. Then you can dispose of the server in the Dispose method.
 
 xUnit will run the constructor and dispose method once for each test.
 
 ## xUnit - Single Server Multiple Tests 
-(see /Samples/SingleServerMultipleTests.cs)
+(see https://github.com/ashimoon/dotnetliberty-aspnet-testing/blob/master/Samples/SingleServerMultipleTests.cs)
 
 This will use xUnit class fixtures in order to fire up a single web application once and have it shared amongst all tests in the test class.
 
